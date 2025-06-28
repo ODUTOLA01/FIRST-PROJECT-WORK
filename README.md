@@ -40,7 +40,37 @@ EDA involves the exploring of the Data to answer some questions about the Data s
 10. Which customers returned items and what segment do they belong to?  
 11. Was shipping cost appropriately spent based on order priority?
 
+### Data Analysis
 
+This is where we include some basic lines of codes/querry during analysis
 
-    
+```SQL
+WITH TopCustomers AS (
+    Select Top 5 Customer_Name, sum(Sales) 
+AS TotalSales
+   FROM dbo.[KMS Sql Case Study]
+   GROUP BY Customer_Name
+   ORDER BY TotalSales Desc
+)
+SELECT *FROM TopCustomers;
 
+WITH TopCustomers AS (
+    Select Top 5 Customer_Name
+    FROM dbo.[KMS Sql Case Study]
+   GROUP BY Customer_Name
+   ORDER BY SUm(Sales) Desc
+)
+SELECT o.Customer_Name, o.Product_Category,
+sum(o.Sales) AS CategorySales
+FROM dbo.[KMS Sql Case Study] o
+JOIN TopCustomers tc ON o.Customer_Name =
+tc.Customer_Name
+GROUP BY o.Customer_Name, o.Product_Category
+ORDER BY o.Customer_Name, CategorySales
+Desc;
+```
+
+ ### Results
+ 
+ The analysis results are summarized as following:
+ 1. 
