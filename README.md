@@ -72,5 +72,7 @@ Desc;
 
  ### Results
  
- The analysis results are summarized as following:
- 1. 
+ The analysis results are summarized as following;
+ 1. Product category 'TECHNOLOGY' as the highest sales.
+ 2. The regions with the Top 3 sales are;
+    
