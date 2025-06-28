@@ -31,7 +31,7 @@ EDA involves the exploring of the Data to answer some questions about the Data s
 1. Which product category had the highest sales?  
 2. What are the Top 3 and Bottom 3 regions in terms of sales?  
 3. What were the total sales of appliances in Ontario?  
-4. Advise thecmanagement of KMS on what to do to increase the revenue from the bottom 10 customers?  
+4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers?  
 5. KMS incurred the most shipping cost using which shipping method?
 6. Who are the most valuable customers and what products or services do they typically purchase?  
 7. Which small business customer had the highest sales?  
@@ -89,5 +89,11 @@ Desc;
     |Yukon|975,867.382|
 3. The total sales of 'Appliances' in Ontario is 202,346.84
 4. The following are the advice for increasing the revenue from bottom 10 customers
- -
+  - Leveraging on the use of email marketing,Whatsapp,or SMS to keep them engaged with new arrivals,offers or the company success stories.
+  - Introducing gifts or discounts
+  - Offer loyalty reward
+  - Conduct feedback interviews or send short surveys to learn why they are spending less.
+  - Recommend complementary products or upgrades.
+5. Delivery Truck incurred the most cost of #51,971.940
+6. 
     
