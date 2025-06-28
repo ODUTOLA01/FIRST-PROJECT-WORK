@@ -16,3 +16,28 @@ The primary data source used for this analysis is the KMS_Case_Study.csv and the
 - Ms Excel ( For Data Collection and Cleaning)[Download Here](https://microsoft.com)
 - SQL server (For Querying and Analyis)[Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
+ ### Data Cleaning and Preparation
+ In the initial phase of the Data cleaning and preparation,we perform the following action;
+ 
+    1.Data loading and Inspection
+    2.Handling missing variables
+    3.Data cleaning and formating
+
+    ### Exploratory Data Analysis
+    EDA involves the exploring of the Data to answer some questions about the Data such as;
+1. Which product category had the highest sales?  
+2. What are the Top 3 and Bottom 3 regions in terms of sales?  
+3. What were the total sales of appliances in Ontario?  
+4. How can KMS increase revenue from the bottom 10 customers?  
+5. Which shipping method incurred the most shipping cost?
+6. Who are the most valuable customers and what do they typically buy?  
+7. Which small business customer had the highest sales?  
+8. Which corporate customer placed the most orders from 2009–2012?  
+9. Which consumer customer was the most profitable?  
+10. Which customers returned items and what segment do they belong to?  
+11. Was shipping cost appropriately spent based on order priority?
+
+
+
+    
+
