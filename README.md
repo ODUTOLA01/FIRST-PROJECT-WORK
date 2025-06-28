@@ -75,4 +75,19 @@ Desc;
  The analysis results are summarized as following;
  1. Product category 'TECHNOLOGY' as the highest sales.
  2. The regions with the Top 3 sales are;
+    |Region|Total Sales|
+    |------|-----------|
+    |West  |3,597,549.329|
+    |Otario|3,063,212.527|
+    Prane|2,837,304.650|
+
+    The regions with Bottom 3 are;
+    |Region|Total Sales|
+    |------|-----------|
+    |Nunavut|116,376.486|
+    |Northwest Territories|800,847.341|
+    |Yukon|975,867.382|
+3. The total sales of 'Appliances' in Ontario is 202,346.84
+4. The following are the advice for increasing the revenue from bottom 10 customers
+ -
     
