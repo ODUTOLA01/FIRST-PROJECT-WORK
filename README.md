@@ -13,4 +13,6 @@ Kultra Mega Stores (KMS) is a Lagos-based retailer of office supplies and furnit
 The primary data source used for this analysis is the KMS_Case_Study.csv and the Order_status.csv file containing detailed information about the orders made  from 2009 to 2012
 
 ### Tools
-SQL server (For Querying and Analyis)
+- Ms Excel ( For Data Collection and Cleaning)[Download Here](https://microsoft.com)
+- SQL server (For Querying and Analyis)[Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
