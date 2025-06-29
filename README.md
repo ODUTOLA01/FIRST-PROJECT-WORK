@@ -77,16 +77,16 @@ Desc;
  2. The regions with the Top 3 sales are;
     |Region|Total Sales|
     |------|-----------|
-    |West  |3,597,549.329|
-    |Otario|3,063,212.527|
-    Prane|2,837,304.650|
+    |West  |#3,597,549.329|
+    |Ontario|#3,063,212.527|
+    Prane|#2,837,304.650|
 
     The regions with Bottom 3 are;
     |Region|Total Sales|
     |------|-----------|
-    |Nunavut|116,376.486|
-    |Northwest Territories|800,847.341|
-    |Yukon|975,867.382|
+    |Nunavut|#116,376.486|
+    |Northwest Territories|#800,847.341|
+    |Yukon|#975,867.382|
 3. The total sales of 'Appliances' in Ontario is 202,346.84
 4. The following are the advice for increasing the revenue from bottom 10 customers
   - Leveraging on the use of email marketing,Whatsapp,or SMS to keep them engaged with new arrivals,offers or the company success stories.
@@ -95,5 +95,23 @@ Desc;
   - Conduct feedback interviews or send short surveys to learn why they are spending less.
   - Recommend complementary products or upgrades.
 5. Delivery Truck incurred the most cost of #51,971.940
-6. 
+6. Five customer are the most valuables with their products. They are;
+   |Customer Name|Product|
+   |-----------|----------|
+   |Emily Phan|Office Supplies,Furniture and Technology|
+   |Deborah Brumfield|Office Supplies,Furniture and Technology|
+   |Roy Skaria|Office Supplies,Furniture and Technology|
+   |Sylvia Foulston|Office Supplies,Furniture and Technology|
+   |Grant Carrol|Office Supplies,Furniture and Technology|
+7. Dennis Kane is a small business with the highest sales of #75,967.591
+8. Adam Hart has the most number of order(27 Orders) from 2009-2012
+9. The most profitable consumer customer as a total profit of #34,005.440
+10. 872 customers returned items in Consumer,Small business,Home office and Corporate.
+11. Delivery Truck used for high priority orders caused unnecessary shipping cost and delay.
+    Therefore,55% of low priority orders was used on Express Air,indicating a potential overspend on fast delivery for non_urgent items.So, cost usage in this terms is not appropraite.
+
+### Recommendations
+
+Based on the analysis,i recommen the following actions;
+ - 
     
