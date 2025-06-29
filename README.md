@@ -111,7 +111,21 @@ Desc;
     Therefore,55% of low priority orders was used on Express Air,indicating a potential overspend on fast delivery for non_urgent items.So, cost usage in this terms is not appropraite.
 
 ### Recommendations
+Based on the analysis,i recommen the following actions; 
+ - Reward top customers with loyalty programs.
+ - Optimize shipping by aligning order priority with appropriate shipping mode
+    - For Example: Critical-Express Air,
+    - Low-Delivery Truck.
+ - Retain low-value customers through targeted offers/discounts or loyalty programs  
+ - Monitor returns in the Office Home,Technology,Furniture segment and improve product info accuracy.
 
-Based on the analysis,i recommen the following actions;
- - 
+### Limitations
+I had to change some of my datatype with int. before i can successfully load the data set which would have affected my analysis.
+
+### Reference
+Incubator Hub.(2025.May 19).Sql class on creating View using JOIN [video].https://www.youtube.com/live/9J2-a81TrZg?si=3vknoceAqpsxNNBc
+OpenAI.(2025,June 28).Syntax Error.https://chat.openai.com
+Smith,J.(2022).How to analyse sales data.DataPro Solutions.https://www.dataprosolutions.com/analyse-sales-data
+
+
     
