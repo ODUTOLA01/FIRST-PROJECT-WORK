@@ -5,6 +5,19 @@ I have learnt quite a number of things ranging from Ms Excel to SQL,and Power BI
 
 ## Project Topic: Kultra Mega Store(KMS) Analysis
 
+## Table Of Contents
+
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Tools](#tools)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Data Analysis](#data-analysis)
+- [Results](#results)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [References](#references)
+
 ### Project Overview
 
 Kultra Mega Stores (KMS) is a Lagos-based retailer of office supplies and furniture with a large corporate operations across Lagos,Nigeria. This case study focuses on analyzing order data from the Abuja division from (2009-2012). By analysing and identifying sales trends by category, segment, and region,uncover high-value and low-performing customers, assess shipping cost efficiency relative to order priority, and to provide actionable insights to help management increase revenue and customer satisfaction based on the data gotten to enable me to tell compelling stories around the data from the insights gotten.
@@ -122,10 +135,10 @@ Based on the analysis,i recommen the following actions;
 ### Limitations
 I had to change some of my datatype with int. before i can successfully load the data set which would have affected my analysis.
 
-### Reference
-Incubator Hub.(2025.May 19).Sql class on creating View using JOIN [video].https://www.youtube.com/live/9J2-a81TrZg?si=3vknoceAqpsxNNBc
-OpenAI.(2025,June 28).Syntax Error.https://chat.openai.com
-Smith,J.(2022).How to analyse sales data.DataPro Solutions.https://www.dataprosolutions.com/analyse-sales-data
+### References
+1. Incubator Hub.(2025.May 19).Sql class on creating View using JOIN [video].https://www.youtube.com/live/9J2-a81TrZg?si=3vknoceAqpsxNNBc
+2. OpenAI.(2025,June 28).Syntax Error.https://chat.openai.com
+3. Smith,J.(2022).How to analyse sales data.DataPro Solutions.https://www.dataprosolutions.com/analyse-sales-data
 
 
     
