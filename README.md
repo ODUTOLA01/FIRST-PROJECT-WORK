@@ -26,17 +26,17 @@ Kultra Mega Stores (KMS) is a Lagos-based retailer of office supplies and furnit
 The primary data source used for this analysis is the KMS_Case_Study.csv and the Order_status.csv file containing detailed information about the orders made  from 2009 to 2012
 
 ### Tools
-- Ms Excel ( For Data Collection and Cleaning)
+- Ms Excel ( For Data Collection)
    -  [Download Here](https://microsoft.com)
 - SQL server (For Querying and Analyis)
   -  [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
  ### Data Cleaning and Preparation
 
- In the initial phase of the Data cleaning and preparation,we perform the following action;
+ In the initial phase of the Data cleaning and preparation, I perform the following action;
  1. Data loading and Inspection,
  2. Handling missing variables,
- 3. Data cleaning and formating.
+ 3. Data formating.
 
 ### Exploratory Data Analysis
 
@@ -55,9 +55,64 @@ EDA involves the exploring of the Data to answer some questions about the Data s
 
 ### Data Analysis
 
-This is where we include some basic lines of codes/querry during analysis
+This is where I include some basic lines of codes/querry during analysis
 
 ```SQL
+create database KMS__db
+
+Select *from dbo.[KMS Sql Case Study]
+
+--------QUESTIONS-----
+
+-----Which Product Category had the Highest Sales?----
+
+SELECT TOP 1 Product_Category, 
+sum(Sales) As TotalSales
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Product_Category
+ORDER BY TotalSales Desc;
+
+---What are the Top 3 and Bottom 3 regions in terms of Sales?---
+-----TOP 3---
+
+Select Top 3 Region, sum(Sales) AS TotalSales
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Region
+ORDER BY TotalSales Desc;
+----BOTTOM 3----
+
+Select Top 3 Region, sum(Sales) AS TotalSales
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Region
+ORDER BY TotalSales Asc;
+
+---What Were The Total Sales Of Appliances In Ontario?---
+
+select Region, sum(Sales) AS TotalSales
+FROM dbo.[KMS Sql Case Study]
+WHERE Product_Sub_Category ='Appliances' AND Province = 'Ontario'
+group by Region;
+
+--Advise the KMS on what to do to increase the revenue from the bottom 10 customers
+
+Select Top 10 Customer_Name, sum(Sales) AS TotalSales
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Customer_Name
+ORDER BY TotalSales Asc;
+```
+```
+---KMS incured the most shipping cost using which shipping method?----
+
+
+Select Top 1 Ship_Mode, sum(Shipping_Cost) AS TotalShippingCost
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Ship_Mode
+ORDER BY TotalShippingCost Desc;
+
+----Who are the most valuable customers,and what products or services do they typically purchase?
+
+GET 5 HIGHEST CUSTOMERS BY SALES
+
 WITH TopCustomers AS (
     Select Top 5 Customer_Name, sum(Sales) 
 AS TotalSales
@@ -81,6 +136,74 @@ tc.Customer_Name
 GROUP BY o.Customer_Name, o.Product_Category
 ORDER BY o.Customer_Name, CategorySales
 Desc;
+
+----Which small business customer had the highest sales?---
+
+SELECT Top 1 Customer_Name, sum(Sales) AS
+TotalSales
+FROM dbo.[KMS Sql Case Study]
+WHERE Customer_Segment = 'Small Business'
+GROUP BY Customer_Name
+ORDER BY TotalSales Desc
+```
+```
+----WHICH CORPORATE CUSTOMER PLACED THE MOST NUMBER OF ORDER IN (2009-2012)?--
+
+SELECT Top 1 Customer_Name,count(Order_ID) AS
+Orders
+FROM dbo.[KMS Sql Case Study]
+WHERE Customer_Segment = 'Corporate'
+GROUP BY Customer_Name
+ORDER BY Orders Desc
+
+
+Select *from dbo.[KMS Sql Case Study]
+
+
+------WHICH CONSUMER CUSTOMER WAS THE MOST PROFITABLE ONE?----
+
+SELECT Top 1 Customer_Name,SUM(Profit) AS
+TotalProfit
+FROM dbo.[KMS Sql Case Study]
+WHERE Customer_Segment = 'Consumer'
+GROUP BY Customer_Name
+ORDER BY TotalProfit Desc
+```
+```
+-----WHICH CUSTOMER RETURNED ITEMS,AND WHAT SEGMENT DO THEY BELONG TO?
+
+-----Create VIEW
+
+CREATE VIEW CustomerReturnedSegment AS
+SELECT
+    k.Order_ID,
+    k.Customer_Name,
+    k.Customer_Segment,
+    s.Status AS return_Status
+FROM [dbo].[KMS Sql Case Study] AS k
+JOIN [dbo].[Order_Status] AS s
+ ON k.Order_ID = s.Order_ID;
+
+SELECT *FROM CustomerReturnedSegment
+
+-----Customer who Returned Items & Their Segment
+
+SELECT
+    Customer_Name,
+	Customer_Segment,
+	return_Status
+FROM dbo.[CustomerReturnedSegment]
+WHERE
+return_Status = 'Returned';
+
+
+-----Was shipping cost spent appropriately by order priority?
+
+SELECT Order_Priority, Ship_Mode,
+Avg(Shipping_Cost) AS AvgShipping
+FROM dbo.[KMS Sql Case Study]
+GROUP BY Order_Priority, Ship_Mode
+ORDER BY Order_Priority, AvgShipping Desc;
 ```
 
  ### Results
@@ -124,7 +247,7 @@ Desc;
     Therefore,55% of low priority orders was used on Express Air,indicating a potential overspend on fast delivery for non_urgent items.So, cost usage in this terms is not appropraite.
 
 ### Recommendations
-Based on the analysis,i recommen the following actions; 
+Based on the analysis,I recommen the following actions; 
  - Reward top customers with loyalty programs.
  - Optimize shipping by aligning order priority with appropriate shipping mode
     - For Example: Critical-Express Air,
