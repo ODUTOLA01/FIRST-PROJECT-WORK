@@ -199,11 +199,15 @@ return_Status = 'Returned';
 
 -----Was shipping cost spent appropriately by order priority?
 
-SELECT Order_Priority, Ship_Mode,
-Avg(Shipping_Cost) AS AvgShipping
-FROM dbo.[KMS Sql Case Study]
-GROUP BY Order_Priority, Ship_Mode
-ORDER BY Order_Priority, AvgShipping Desc;
+SELECT
+     [Order_priority],[Ship_mode],
+     COUNT([Order_ID]) AS Order_Count,
+     sum(Sales-Profit) AS 
+Estimated_ShippingCost,
+     AVG(DATEDIFF(DAY,[Order_Date],[Ship_Date])) AS Avg_Ship_Days
+ FROM dbo.[KMS Sql Case Study]
+Group by [Order_Priority], [Ship_Mode]
+Order by  [Order_Priority], [Ship_Mode] Desc;
 ```
 
  ### Results
