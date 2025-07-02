@@ -227,7 +227,7 @@ Order by  [Order_Priority], [Ship_Mode] Desc;
     |Nunavut|#116,376.486|
     |Northwest Territories|#800,847.341|
     |Yukon|#975,867.382|
-3. The total sales of 'Appliances' in Ontario is 202,346.84
+3. The total sales of 'Appliances' in Ontario is #202,346.84
 4. The following are the advice for increasing the revenue from bottom 10 customers
   - Leveraging on the use of email marketing,Whatsapp,or SMS to keep them engaged with new arrivals,offers or the company success stories.
   - Introducing gifts or discounts
